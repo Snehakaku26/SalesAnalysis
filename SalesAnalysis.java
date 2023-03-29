@@ -2,9 +2,9 @@
 import java.util.ArrayList;
 import java.util.List;
 public class SalesAnalysis {
-    private static final String[] PRODUCTS = {"Tea", "Coffee", "GreenTea", "LemonTea", "Soda", "Limca"};
-    private static final double[] SALES_2021 = {100.0, 129.0, 140.0, 167.0, 267.0, 873.0};
-    private static final double[] SALES_2022 = {120.0, 234.0, 168.0, 345.0, 987.0, 983.0};
+    private static final String[] PRODUCTS = {"Tea", "Coffee", "GreenTea"};
+    private static final double[] SALES_2021 = {100.0, 129.0, 140.0};
+    private static final double[] SALES_2022 = {120.0, 234.0, 168.0};
 
     public static void main(String[] args) {
         List<Product> products = new ArrayList<>();
@@ -44,6 +44,14 @@ public class SalesAnalysis {
 }
             
                 
+
+output:
+Product         Sales2021       Sales2022       Variance        VariancePct     Total
+Tea             100.00          120.00          20.00           20.00%          220.00
+Coffee          129.00          234.00          105.00          81.40%          363.00
+GreenTea                140.00          168.00          28.00           20.00%          308.00
+
+
 
 
 
